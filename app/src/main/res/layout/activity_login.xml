@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginScreen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#28228A"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/backgroundImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.07"
+        android:contentDescription="@string/fonbackgroundimage"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+    <ImageView
+        android:id="@+id/rombImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="-17dp"
+        android:layout_marginEnd="50dp"
+        android:contentDescription="@string/rombimage"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/path" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00FFFFFF"
+        android:shadowColor="#00FFFFFF"
+        android:text="@string/forgotPassBtnCaption"
+        android:textColor="#000000"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/passwordEditText"
+        app:layout_constraintTop_toBottomOf="@+id/button2" />
+
+    <TextView
+        android:id="@+id/homeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/home"
+        android:textColor="#FF1D0D"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/iTextView"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+
+    <TextView
+        android:id="@+id/iTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:text="@string/i"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/backgroundImageView"
+        app:layout_constraintTop_toTopOf="@+id/homeTextView" />
+
+    <TextView
+        android:id="@+id/homeLogoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="@string/home"
+        android:textColor="#FF1D0D"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="90dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="50dp"
+        android:contentDescription="@string/homeimage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/home" />
+
+    <TextView
+        android:id="@+id/iLogoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:text="@string/i"
+        android:textColor="#FFFFFF"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toStartOf="@+id/homeLogoTextView"
+        app:layout_constraintTop_toBottomOf="@+id/logoImageView" />
+
+    <Button
+        android:id="@+id/button"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="#00FFFFFF"
+        android:text="@string/registrationButtonCaption"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/backgroundImageView"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/backgroundImageView" />
+
+    <TextView
+        android:id="@+id/sloganTextView"
+        android:layout_width="106dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/sloganApp"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="@+id/homeTextView"
+        app:layout_constraintStart_toStartOf="@+id/iTextView"
+        app:layout_constraintTop_toBottomOf="@+id/homeTextView" />
+
+    <EditText
+        android:id="@+id/userNameEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="100dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/hintNameTextField"
+        android:inputType="textPersonName"
+        android:paddingStart="45dp"
+        android:paddingEnd="0dp"
+        android:textColorHighlight="#2196F3"
+        android:textColorLink="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rombImageView"
+        app:layout_constraintStart_toStartOf="@+id/iTextView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/hintPasswordTextField"
+        android:inputType="textPassword"
+        android:paddingStart="45dp"
+        android:paddingEnd="0dp"
+        app:layout_constraintEnd_toEndOf="@+id/userNameEditText"
+        app:layout_constraintStart_toStartOf="@+id/userNameEditText"
+        app:layout_constraintTop_toBottomOf="@+id/userNameEditText" />
+
+    <ImageView
+        android:id="@+id/lockImageView"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="13dp"
+        android:contentDescription="@string/lockimageview"
+        app:layout_constraintBottom_toBottomOf="@+id/passwordEditText"
+        app:layout_constraintStart_toStartOf="@+id/passwordEditText"
+        app:srcCompat="@drawable/lock" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:background="#F44336"
+        android:text="@string/autorizeButtonCaption"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/rombImageView"
+        app:layout_constraintTop_toBottomOf="@+id/passwordEditText" />
+
+    <ImageView
+        android:id="@+id/personImageView"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="13dp"
+        android:contentDescription="@string/personimageview"
+        app:layout_constraintBottom_toBottomOf="@+id/userNameEditText"
+        app:layout_constraintStart_toStartOf="@+id/userNameEditText"
+        app:srcCompat="@drawable/person" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

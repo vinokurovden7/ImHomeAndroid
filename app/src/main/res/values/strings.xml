@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">ImHome</string>
+    <string name="fonbackgroundimage">fonBackgroundImage</string>
+    <string name="rombimage">rombImage</string>
+    <string name="forgotPassBtnCaption">Забыли пароль?</string>
+    <string name="home">ДОМА</string>
+    <string name="i">Я</string>
+    <string name="homeimage">homeImage</string>
+    <string name="registrationButtonCaption">Регистрация</string>
+    <string name="sloganApp">Приложение с которым спокойно</string>
+    <string name="hintNameTextField">Имя пользователя</string>
+    <string name="hintPasswordTextField">Пароль</string>
+    <string name="lockimageview">lockImageView</string>
+    <string name="autorizeButtonCaption">Авторизоваться</string>
+    <string name="personimageview">personImageView</string>
+</resources>

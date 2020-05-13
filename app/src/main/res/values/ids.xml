@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="passwordEditText" type="id">passwordEditText</item>
+    <item name="button2" type="id">button2</item>
+    <item name="iTextView" type="id">iTextView</item>
+    <item name="logoImageView" type="id">logoImageView</item>
+    <item name="backgroundImageView" type="id">backgroundImageView</item>
+    <item name="homeTextView" type="id">homeTextView</item>
+    <item name="homeLogoTextView" type="id">homeLogoTextView</item>
+    <item name="rombImageView" type="id">rombImageView</item>
+    <item name="userNameEditText" type="id">userNameEditText</item>
+</resources>
